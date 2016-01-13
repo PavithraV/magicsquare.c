@@ -1,4 +1,4 @@
-# magicsquare.c
+
 #include<stdio.h>
 #include<math.h>
 #define n 9
@@ -15,7 +15,7 @@ int magicsquare(int a[3][3],int i,int j,int count)
 		    {
 			       a[k][m] = count;
 			       i = k;
-             j = m;	
+                               j = m;	
 		    }
 		    else
 		    {
@@ -26,7 +26,7 @@ int magicsquare(int a[3][3],int i,int j,int count)
 		}
 }
 
-int main()
+void main()
 {
       int a[3][3]={0};
 	    int i,j,n = 3;
@@ -35,9 +35,10 @@ int main()
 	    {
 		      printf("\n");
 		      for(j=0;j<n;j++)
-          {
+                      {
 			         printf("%d\t",a[i][j]);
-          }
-    	}
+                      }
+    	    }
+    	    
 }
 
